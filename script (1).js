@@ -1,20 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
 
-document.getElementById('routineForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    let allChecked = true;
+h1, h2 {
+    color: #333;
+}
 
-    checkboxes.forEach(function(checkbox) {
-        if (!checkbox.checked) {
-            allChecked = false;
-        }
-    });
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    if (allChecked) {
-        alert('Form submitted successfully!');
-        // In a real application, you would send the data to a server here.
-    } else {
-        alert('Please complete all tasks before submitting.');
-    }
-});
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
